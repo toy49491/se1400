@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Visit South Korea</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navbar-container">
+                <div class="nav-left">
+                    <img src="7916403.jpg" alt="Visit Korea Logo" class="logo">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">HOME</a>
+                        <a href="about.html" class="nav-link">ABOUT</a>
+                        <a href="contact.html" class="nav-link active">CONTACT</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <a href="culture.html" class="nav-link">CULTURE</a>
+                    <a href="food.html" class="nav-link">FOOD</a>
+                    <a href="travel.html" class="nav-link">TRAVEL</a>
+                    <a href="language.html" class="nav-link">LANGUAGE</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="contact-content">
+            <h1>Contact Our Travel Experts</h1>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h2>Email</h2>
+                        <a href="mailto:D00439134@utahtech.edu">D00439134@utahtech.edu</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h2>Phone</h2>
+                        <p>+1 (435) 123-4567</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h2>Office Hours</h2>
+                        <p>Mon-Fri: 9AM - 5PM MST</p>
+                        <p>Sat: 10AM - 2PM MST</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h2>Send Us a Message</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footerbar"></div>
+        <footer>
+            &copy; 2025 Visit South Korea 🇰🇷
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
